@@ -749,8 +749,14 @@ h6,
 }
 
 @media (max-width: 991px) {
+    .strategic-goals-unified-box {
+        border-left: none !important;
+        border-right: none !important;
+        border-radius: 0 !important;
+    }
+
     .strategic-goal-img-wrapper {
-        min-height: 300px;
+        min-height: 250px;
     }
 }
 
@@ -1863,7 +1869,7 @@ h6,
     /* Extra padding so hero is NOT hidden under navbar + topbar */
     .hero-section {
         padding-top: 140px !important;
-        padding-bottom: 40px !important;
+        padding-bottom: 10px !important;
         align-items: flex-start !important;
     }
 
@@ -2052,5 +2058,25 @@ h6,
     /* Reduce module card padding on mobile */
     .module-modern-card {
         padding: 20px !important;
+    }
+
+    /* Strategic Goals Mobile Width Refinement */
+    .strategic-goal-content-wrapper {
+        padding: 1rem 1rem !important;
+    }
+
+    .strategic-goal-content-wrapper .row {
+        margin-left: -0.75rem !important;
+        margin-right: -0.75rem !important;
+    }
+
+    .strategic-goal-content-wrapper .row>[class*="col-"] {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+
+    .strategic-goal-card {
+        border-left: 1px solid rgba(0, 0, 0, 0.05) !important;
+        border-right: 1px solid rgba(0, 0, 0, 0.05) !important;
     }
 }
