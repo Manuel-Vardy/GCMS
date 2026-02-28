@@ -696,10 +696,10 @@ h6,
     transition: var(--transition-normal);
 }
 
-/* Feature 1: Green Overlay (Single Branded Focus) */
+/* Feature 1: Dark Premium Overlay */
 .feature-block-premium.f-overlay-1::before {
-    background: rgba(22, 101, 52, 0.85);
-    /* Dark Forest Green */
+    background: rgba(15, 17, 21, 0.85);
+    /* Dark Slate / Black */
 }
 
 /* Feature 2: Black Overlay */
@@ -1589,6 +1589,44 @@ h6,
     opacity: 0.7;
 }
 
+@media (max-width: 991.98px) {
+    .oitech-topbar {
+        padding: 6px 0;
+    }
+
+    .oitech-topbar .container {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        flex-wrap: nowrap !important;
+        gap: 8px !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .oitech-topbar .d-flex.gap-4.text-muted {
+        font-size: 0.72rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        flex-shrink: 1;
+        gap: 8px !important;
+    }
+
+    .oitech-topbar .d-flex.gap-4.align-items-center {
+        flex-shrink: 0;
+        gap: 8px !important;
+    }
+
+    .oitech-topbar .d-flex.gap-3 {
+        gap: 6px !important;
+    }
+
+    .oitech-topbar .d-flex.gap-3 a {
+        padding-right: 6px;
+        font-size: 0.72rem;
+    }
+}
+
 .oitech-logo-box {
     position: relative;
     background-color: var(--gcms-black);
@@ -1664,5 +1702,130 @@ h6,
         min-height: 50px;
         margin-top: 15px;
         width: 100%;
+    }
+}
+
+/* =====================
+   Mobile Hero Fixes
+   ===================== */
+@media (max-width: 767.98px) {
+
+    /* Extra padding so hero is NOT hidden under navbar + topbar */
+    .hero-section {
+        padding-top: 160px !important;
+        padding-bottom: 60px;
+        align-items: flex-start !important;
+    }
+
+    /* Reduce oversized heading on mobile */
+    .hero-section h1.display-3 {
+        font-size: 2.2rem !important;
+        line-height: 1.2 !important;
+        letter-spacing: -0.5px !important;
+    }
+
+    /* Reduce lead paragraph size */
+    .hero-section p.lead {
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    /* Compact buttons */
+    .hero-section .btn {
+        padding: 0.6rem 1.5rem !important;
+        font-size: 0.9rem !important;
+    }
+
+    /* Reduce display headings site-wide on mobile */
+    .display-5 {
+        font-size: 1.8rem !important;
+    }
+
+    .display-4 {
+        font-size: 2rem !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* Tablet: moderate reduction */
+    .hero-section {
+        padding-top: 150px !important;
+    }
+
+    .hero-section h1.display-3 {
+        font-size: 3rem !important;
+    }
+
+    .hero-section p.lead {
+        font-size: 1.05rem !important;
+    }
+}
+
+/* =====================
+   Custom Hamburger Icon
+   ===================== */
+.custom-toggler {
+    background: transparent;
+    padding: 4px 6px;
+}
+
+.custom-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.custom-hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 22px;
+}
+
+.custom-hamburger span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 4px;
+}
+
+/* Circle dot on left */
+.custom-hamburger span::before {
+    content: '';
+    flex-shrink: 0;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #fff !important;
+    display: block;
+}
+
+/* Pill bar on right */
+.custom-hamburger span::after {
+    content: '';
+    flex: 1;
+    height: 4px;
+    border-radius: 999px;
+    background-color: #fff !important;
+    display: block;
+}
+
+/* =====================
+   Mobile Navbar Height
+   ===================== */
+@media (max-width: 991.98px) {
+    .glass-nav {
+        min-height: 55px !important;
+    }
+
+    .oitech-logo-box {
+        padding: 0 16px !important;
+    }
+
+    .oitech-header .nav-link {
+        height: 50px !important;
+        padding: 0 16px !important;
+        font-size: 0.95rem;
     }
 }

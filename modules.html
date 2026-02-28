@@ -16,8 +16,9 @@
     <!-- Navigation Header -->
     <header class="oitech-header fixed-top">
         <!-- Top Bar -->
-        <div class="oitech-topbar d-none d-lg-block">
-            <div class="container d-flex justify-content-between align-items-center py-2">
+        <div class="oitech-topbar">
+            <div
+                class="container d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center py-2 gap-2">
                 <div class="d-flex gap-4 text-muted small fw-medium">
                     <span><i class="bi bi-envelope-fill text-warning me-2"></i> info@gcms.gov.gh</span>
                 </div>
@@ -43,9 +44,13 @@
                 </div>
 
                 <!-- Mobile Toggle -->
-                <button class="navbar-toggler border-0 me-3 my-3 shadow-none text-dark" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#mainNav">
-                    <i class="bi bi-list fs-1"></i>
+                <button class="navbar-toggler border-0 me-3 my-3 shadow-none custom-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation">
+                    <div class="custom-hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </button>
 
                 <!-- Nav Links & Right Actions -->

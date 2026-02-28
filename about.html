@@ -16,8 +16,9 @@
     <!-- Navigation Header -->
     <header class="oitech-header fixed-top">
         <!-- Top Bar -->
-        <div class="oitech-topbar d-none d-lg-block">
-            <div class="container d-flex justify-content-between align-items-center py-2">
+        <div class="oitech-topbar">
+            <div
+                class="container d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center py-2 gap-2">
                 <div class="d-flex gap-4 text-muted small fw-medium">
                     <span><i class="bi bi-envelope-fill text-warning me-2"></i> info@gcms.gov.gh</span>
                 </div>
@@ -34,7 +35,7 @@
         <!-- Main Navbar -->
         <nav class="navbar navbar-expand-lg glass-nav p-0 shadow-sm" style="min-height: 75px;">
             <div class="container position-relative h-100 p-0 d-flex align-items-center justify-content-between">
-                
+
                 <!-- Black Box Logo Left -->
                 <div class="oitech-logo-box d-flex align-items-center h-100 px-4">
                     <a class="navbar-brand text-white fw-bold fs-3 mb-0" href="index.html">
@@ -43,8 +44,13 @@
                 </div>
 
                 <!-- Mobile Toggle -->
-                <button class="navbar-toggler border-0 me-3 my-3 shadow-none text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-                    <i class="bi bi-list fs-1"></i>
+                <button class="navbar-toggler border-0 me-3 my-3 shadow-none custom-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation">
+                    <div class="custom-hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </button>
 
                 <!-- Nav Links & Right Actions -->
@@ -56,9 +62,9 @@
                         <li class="nav-item"><a class="nav-link " href="news.html">News</a></li>
                     </ul>
 
-                    
+
                 </div>
-                
+
             </div>
         </nav>
     </header>
@@ -73,8 +79,9 @@
             <div class="pill-badge mb-3">Our Organization</div>
             <h1 class="display-4 fw-extrabold mb-4">About <span class="text-yellow">GCMS</span></h1>
             <p class="lead mx-auto text-white opacity-75" style="max-width: 600px;">
-                        A secure, government-managed digital platform designed to modernize the registration, verification, and management of Ordinance and Customary marriages across Ghana.
-                    </p>
+                A secure, government-managed digital platform designed to modernize the registration, verification, and
+                management of Ordinance and Customary marriages across Ghana.
+            </p>
         </div>
     </header>
 
@@ -158,7 +165,7 @@
 
     <!-- Scroll Response Script -->
     <script>
-        (function() {
+        (function () {
             const header = document.querySelector('.oitech-header');
             if (!header) return;
             let lastScrollY = window.scrollY;
