@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCMS - Ghana Centralized Marriage System</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="GCMS is Ghana's premier digital platform for marriage registration, verification, and centralized record management.">
+    <meta name="keywords" content="GCMS, Ghana Marriage System, Marriage Registration, Digital Governance Ghana">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Header -->
+    <header class="oitech-header fixed-top">
+        <!-- Top Bar -->
+        <div class="oitech-topbar d-none d-lg-block">
+            <div class="container d-flex justify-content-between align-items-center py-2">
+                <div class="d-flex gap-4 text-muted small fw-medium">
+                    <span><i class="bi bi-envelope-fill text-warning me-2"></i> info@gcms.gov.gh</span>
+                </div>
+                <div class="d-flex gap-4 align-items-center text-muted small fw-medium">
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-dark"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-dark"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-dark"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navbar -->
+        <nav class="navbar navbar-expand-lg glass-nav p-0 shadow-sm" style="min-height: 75px;">
+            <div class="container position-relative h-100 p-0 d-flex align-items-center justify-content-between">
+
+                <!-- Black Box Logo Left -->
+                <div class="oitech-logo-box d-flex align-items-center h-100 px-4">
+                    <a class="navbar-brand text-white fw-bold fs-3 mb-0" href="index.html">
+                        GCMS<span style="color: var(--gcms-yellow)">.</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler border-0 me-3 my-3 shadow-none text-dark" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <i class="bi bi-list fs-1"></i>
+                </button>
+
+                <!-- Nav Links & Right Actions -->
+                <div class="collapse navbar-collapse px-4 px-lg-0" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3 fw-bold me-lg-5">
+                        <li class="nav-item"><a class="nav-link " href="modules.html">Modules</a></li>
+                        <li class="nav-item"><a class="nav-link " href="features.html">Features</a></li>
+                        <li class="nav-item"><a class="nav-link " href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link " href="news.html">News</a></li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!-- Modern Clean Hero Section -->
+    <section class="hero-section position-relative"
+        style="min-height: 100vh; display: flex; align-items: center; overflow: hidden; padding-top: 90px;">
+
+        <!-- Background Image Carousel -->
+        <div id="heroBackgroundCarousel" class="carousel slide carousel-fade position-absolute w-100 h-100"
+            data-bs-ride="carousel" data-bs-interval="6000" style="top: 0; left: 0; z-index: 0;">
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                    <img src="images/two-couples.jpg" class="d-block w-100 h-100"
+                        style="object-fit: cover; object-position: center; filter: brightness(0.35);" alt="Slide 1">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="images/man-proposed-marriage.jpg" class="d-block w-100 h-100"
+                        style="object-fit: cover; object-position: center 30%; filter: brightness(0.35);" alt="Slide 2">
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlays -->
+        <div class="hero-gradient-overlay"></div>
+        <div class="hero-pattern-overlay"></div>
+
+        <!-- Content Overlay -->
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="row">
+
+                <div class="col-lg-10 col-xl-8 reveal active">
+
+                    <h1 class="display-3 fw-bold text-white mb-4"
+                        style="line-height: 1.1; letter-spacing: -1px; text-shadow: 0 10px 30px rgba(0,0,0,0.4);">
+                        National <br>
+                        <span style="color: var(--gcms-yellow); font-weight: 300;">Marriage Registration</span> <br>
+                        Portal.
+                    </h1>
+
+                    <p class="lead text-white mb-5 pe-lg-5"
+                        style="font-size: 1.25rem; line-height: 1.7; max-width: 800px; text-shadow: 0 4px 10px rgba(0,0,0,0.5); font-weight: 300;">
+                        A secure, government-managed digital platform designed to modernize the registration,
+                        verification, and management of Ordinance and Customary <br>marriages across Ghana.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="modules.html"
+                            class="btn btn-primary-gcms px-5 py-3 d-inline-flex align-items-center gap-2 shadow-lg"
+                            style="background: var(--gcms-yellow); color: var(--gcms-black); font-size: 1.1rem;">
+                            View Modules <i class="bi bi-arrow-right"></i>
+                        </a>
+                        <a href="about.html"
+                            class="btn btn-outline-gcms px-5 py-3 d-inline-flex align-items-center gap-2 shadow-lg"
+                            style="font-size: 1.1rem;">
+                            Learn More
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Slide Indicators -->
+            <div class="row mt-5 pt-4 reveal delay-200 active">
+                <div class="col-auto">
+                    <div class="carousel-indicators position-relative m-0 d-flex gap-2">
+                        <button type="button" data-bs-target="#heroBackgroundCarousel" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"
+                            style="width: 12px; height: 12px; border-radius: 50%; border: none; background-color: var(--gcms-yellow);"></button>
+                        <button type="button" data-bs-target="#heroBackgroundCarousel" data-bs-slide-to="1" class=""
+                            aria-label="Slide 2"
+                            style="width: 12px; height: 12px; border-radius: 50%; border: none; background-color: rgba(255,255,255,0.5);"></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Vision Section -->
+    <section class="py-5 bg-white">
+        <div class="container container-wide">
+            <div class="vision-card-full reveal active">
+                <div class="vision-circle vision-circle-1"></div>
+                <div class="vision-circle vision-circle-2"></div>
+                <div class="vision-card-img">
+                    <img src="images/romantic-black-couple-sitting-restaurant-wearing-elegant-clothes.jpg"
+                        alt="Our Vision">
+                </div>
+                <div class="vision-card-content">
+                    <div class="vision-card-text">
+                        <div class="pill-badge mb-3"
+                            style="background: rgba(34, 197, 94, 0.1); color: var(--gcms-yellow); font-weight: bold; border: none;">
+                            OUR VISION</div>
+                        <h2 class="fs-4 mb-4 text-dark" style="line-height: 1.5; font-weight: 300;">
+                            To establish a secure, inclusive, and fully digital national marriage registration system
+                            that ensures legal integrity and reliable civil records.
+                        </h2>
+
+                        <div class="row g-4 mt-2">
+                            <div class="col-md-6 text-dark small fw-bold text-uppercase opacity-75"
+                                style="letter-spacing: 1px;">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i> National Data Consolidation
+                            </div>
+                            <div class="col-md-6 text-dark small fw-bold text-uppercase opacity-75"
+                                style="letter-spacing: 1px;">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i> Public Trust & Legal Assurance
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. Modules -->
+    <section class="section-padding bg-modules-pattern">
+        <div class="container">
+            <div class="text-start mb-5 pb-3 reveal active">
+                <h2 class="display-5 fw-extrabold text-dark heading-left-animated">Modules</h2>
+            </div>
+
+            <div class="row g-4">
+                <!-- Registration -->
+                <div class="col-lg-4 col-md-6 reveal delay-100 active">
+                    <div class="module-modern-card">
+                        <div class="module-card-deco module-card-deco-1"></div>
+                        <div class="module-card-deco module-card-deco-2"></div>
+                        <div class="module-card-deco module-card-deco-3"></div>
+                        <div class="module-card-header">
+                            <div class="module-modern-icon">
+                                <i class="bi bi-person-plus"></i>
+                            </div>
+                            <h4 class="module-modern-title">Registration Module</h4>
+                        </div>
+                        <div class="module-modern-content">
+                            <ul class="feature-list small mb-2 text-dark">
+                                <li>Marriage Registration Module</li>
+                                <li>Spouses Information Module</li>
+                                <li>Witness Information Module</li>
+                            </ul>
+                            <h6 class="fw-bold mt-3 mb-2 text-dark small">Key Benefits</h6>
+                            <ul class="feature-list small mb-0 text-dark opacity-75">
+                                <li>No manual queues or paper filing</li>
+                                <li>Lower risk of errors and lost records</li>
+                                <li>Faster issuance of certificates</li>
+                            </ul>
+                        </div>
+                        <a href="modules.html" class="module-read-more">
+                            <i class="bi bi-plus"></i> Read More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Verification -->
+                <div class="col-lg-4 col-md-6 reveal delay-200 active">
+                    <div class="module-modern-card">
+                        <div class="module-card-deco module-card-deco-1"></div>
+                        <div class="module-card-deco module-card-deco-2"></div>
+                        <div class="module-card-deco module-card-deco-3"></div>
+                        <div class="module-card-header">
+                            <div class="module-modern-icon">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <h4 class="module-modern-title">Verification and Validation</h4>
+                        </div>
+                        <div class="module-modern-content text-muted small">
+                            After filing, the Ghana Centralized Marriage System waits a statutory period. During this
+                            time, authorised users can lodge objections electronically. GCMS staff review objections and
+                            approve or reject before certificate issuance.
+                        </div>
+                        <a href="modules.html" class="module-read-more">
+                            <i class="bi bi-plus"></i> Read More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- WorkStation -->
+                <div class="col-lg-4 col-md-6 reveal delay-300 active">
+                    <div class="module-modern-card">
+                        <div class="module-card-deco module-card-deco-1"></div>
+                        <div class="module-card-deco module-card-deco-2"></div>
+                        <div class="module-card-deco module-card-deco-3"></div>
+                        <div class="module-card-header">
+                            <div class="module-modern-icon">
+                                <i class="bi bi-building-gear"></i>
+                            </div>
+                            <h4 class="module-modern-title">WorkStation Module</h4>
+                        </div>
+                        <div class="module-modern-content">
+                            <p class="text-muted small mb-3">Ghana Centralized Marriage System has a Workstation Module
+                                that secures internal interface used by registrars, supervisors, and authorized
+                                government staff to process, review, approve, and manage marriage registration
+                                applications. It serves as the operational backbone of the Marriage Registration System.
+                            </p>
+                            <ul class="feature-list small mb-0 text-dark">
+                                <li>Role-Based work flow</li>
+                                <li>Application review & Approval</li>
+                            </ul>
+                        </div>
+                        <a href="modules.html" class="module-read-more">
+                            <i class="bi bi-plus"></i> Read More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate Issuance -->
+                <div class="col-lg-4 col-md-6 reveal delay-400 active">
+                    <div class="module-modern-card">
+                        <div class="module-card-deco module-card-deco-1"></div>
+                        <div class="module-card-deco module-card-deco-2"></div>
+                        <div class="module-card-deco module-card-deco-3"></div>
+                        <div class="module-card-header">
+                            <div class="module-modern-icon">
+                                <i class="bi bi-patch-check"></i>
+                            </div>
+                            <h4 class="module-modern-title">Certificate Issuance Module</h4>
+                        </div>
+                        <div class="module-modern-content">
+                            <p class="text-muted small mb-0">The Certificate Issuance and Generation feature automates
+                                the creation, validation, and delivery of legally recognized marriage certificates from
+                                GCMS.</p>
+                        </div>
+                        <a href="modules.html" class="module-read-more">
+                            <i class="bi bi-plus"></i> Read More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Divorce Module -->
+                <div class="col-lg-4 col-md-6 reveal delay-500 active">
+                    <div class="module-modern-card">
+                        <div class="module-card-deco module-card-deco-1"></div>
+                        <div class="module-card-deco module-card-deco-2"></div>
+                        <div class="module-card-deco module-card-deco-3"></div>
+                        <div class="module-card-header">
+                            <div class="module-modern-icon">
+                                <i class="bi bi-file-earmark-break"></i>
+                            </div>
+                            <h4 class="module-modern-title">Divorce Module</h4>
+                        </div>
+                        <div class="module-modern-content">
+                            <p class="text-muted small mb-0">The Divorce Module is a secure component in GCMS designed
+                                to manage the registration, validation, and documentation of divorce proceedings in
+                                accordance with Ghana’s legal framework. It ensures that divorce records are properly
+                                processed, recorded, and linked to existing marriage records.</p>
+                        </div>
+                        <a href="modules.html" class="module-read-more">
+                            <i class="bi bi-plus"></i> Read More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Integration Module -->
+                <div class="col-lg-4 col-md-6 reveal delay-600 active">
+                    <div class="module-modern-card">
+                        <div class="module-card-deco module-card-deco-1"></div>
+                        <div class="module-card-deco module-card-deco-2"></div>
+                        <div class="module-card-deco module-card-deco-3"></div>
+                        <div class="module-card-header">
+                            <div class="module-modern-icon">
+                                <i class="bi bi-box-arrow-in-right"></i>
+                            </div>
+                            <h4 class="module-modern-title">Integration Module (API)</h4>
+                        </div>
+                        <div class="module-modern-content">
+                            <p class="text-muted small mb-0">The API Integration Component enables GCMS to securely
+                                communicate and exchange data with other authorized government systems and third-party
+                                platforms. It ensures interoperability, real-time verification, and seamless service
+                                delivery.</p>
+                        </div>
+                        <a href="modules.html" class="module-read-more">
+                            <i class="bi bi-plus"></i> Read More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Analytics Module -->
+                <div class="col-lg-12 reveal delay-700 active">
+                    <div class="module-modern-card">
+                        <div class="module-card-deco module-card-deco-1"></div>
+                        <div class="module-card-deco module-card-deco-2"></div>
+                        <div class="module-card-deco module-card-deco-3"></div>
+                        <div class="module-card-header">
+                            <div class="module-modern-icon">
+                                <i class="bi bi-bar-chart-line"></i>
+                            </div>
+                            <h4 class="module-modern-title">Data Analytics Module</h4>
+                        </div>
+                        <div class="module-modern-content">
+                            <p class="text-muted small mb-0">The Data Analytics Module is a strategic component of GCMS
+                                that transforms registration data into actionable insights for government planning and
+                                policy development. The module collects and analyzes aggregated marriage and divorce
+                                data to generate real-time statistics and trend reports at national levels.</p>
+                        </div>
+                        <a href="modules.html" class="module-read-more">
+                            <i class="bi bi-plus"></i> Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Features. -->
+    <section class="bg-black-section dots-wrapper" style="background-color: var(--gcms-black); padding: 0;">
+        <div class="dots-deco"></div>
+        <div class="container-fluid p-0">
+            <div class="row g-0 features-seamless-row">
+                <!-- Feature 1 -->
+                <div class="col-lg-3 col-md-6 reveal delay-100 active">
+                    <div class="feature-block-premium f-overlay-1"
+                        style="background-image: url('img/feature_bg_certificates.png');">
+                        <div class="feature-premium-icon">
+                            <i class="bi bi-lightning-charge"></i>
+                        </div>
+                        <h4 class="feature-premium-title">Certificate Generation</h4>
+                        <div class="feature-premium-text">
+                            <p class="mb-0">Secure creation, validation, and issuance of official marriage and divorce
+                                certificates nationwide.</p>
+                        </div>
+                        <a href="features.html" class="feature-read-more">
+                            Read More <i class="bi bi-arrow-right-short"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Feature 2 -->
+                <div class="col-lg-3 col-md-6 reveal delay-200 active">
+                    <div class="feature-block-premium f-overlay-2"
+                        style="background-image: url('img/feature_bg_security.png');">
+                        <div class="feature-premium-icon">
+                            <i class="bi bi-shield-lock"></i>
+                        </div>
+                        <h4 class="feature-premium-title">Security & Governance</h4>
+                        <div class="feature-premium-text">
+                            <p class="mb-0">Protecting sensitive citizen data and maintaining trust through immutable
+                                records and top-tier security.</p>
+                        </div>
+                        <a href="features.html" class="feature-read-more">
+                            Read More <i class="bi bi-arrow-right-short"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Feature 3 -->
+                <div class="col-lg-3 col-md-6 reveal delay-300 active">
+                    <div class="feature-block-premium f-overlay-3"
+                        style="background-image: url('img/feature_bg_citizens.png');">
+                        <div class="feature-premium-icon">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h4 class="feature-premium-title">Citizen-Facing</h4>
+                        <div class="feature-premium-text">
+                            <p class="mb-0">A convenient public interface for Ghanaian citizens to track applications
+                                and schedule appointments.</p>
+                        </div>
+                        <a href="features.html" class="feature-read-more">
+                            Read More <i class="bi bi-arrow-right-short"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Feature 4 -->
+                <div class="col-lg-3 col-md-6 reveal delay-400 active">
+                    <div class="feature-block-premium f-overlay-4"
+                        style="background-image: url('img/feature_bg_accessibility.png');">
+                        <div class="feature-premium-icon">
+                            <i class="bi bi-universal-access"></i>
+                        </div>
+                        <h4 class="feature-premium-title">Accessibility compliance for Disabled</h4>
+                        <div class="feature-premium-text">
+                            <p class="mb-0">Inclusive design ensuring the platform is usable by all citizens, including
+                                persons with disabilities.</p>
+                        </div>
+                        <a href="features.html" class="feature-read-more">
+                            Read More <i class="bi bi-arrow-right-short"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AboutUs -->
+    <section class="about-section-vision">
+        <div class="container container-wide">
+            <div class="reveal active">
+                <div class="section-title-left px-md-5 mb-4">
+                    <h2 class="display-5 fw-extrabold mb-2 text-dark heading-left-animated">About Us</h2>
+                </div>
+            </div>
+
+            <div class="about-card-vision reveal active">
+                <!-- Decorative Circles (Vision Style) -->
+                <div class="about-vision-circle" style="width: 300px; height: 300px; left: -100px; bottom: -100px;">
+                </div>
+                <div class="about-vision-circle" style="width: 200px; height: 200px; left: -50px; bottom: -50px;"></div>
+
+                <div class="about-vision-content">
+                    <div class="about-vision-text">
+                        <p class="lead text-dark mb-4" style="font-size: 1.1rem; line-height: 1.8; font-weight: 400;">
+                            GCMS is a secure, government-managed digital platform designed to modernize the registration
+                            and management of marriages and divorces across Ghana. It provides a seamless, end-to-end
+                            solution that supports Ordinance and Customary marriages, ensuring legal compliance,
+                            accuracy, and efficiency.
+                        </p>
+                        <p class="text-muted mb-4" style="font-size: 0.95rem; line-height: 1.8;">
+                            Through the GCMS, citizens can submit applications online, upload required documents, pay
+                            statutory fees, track application status, and receive digitally signed marriage or divorce
+                            certificates.
+                        </p>
+                        <p class="text-muted mb-0" style="font-size: 0.95rem; line-height: 1.8;">
+                            GCMS strengthens Ghana’s civil registration system, enhances service delivery, promotes
+                            transparency, and provides reliable, verifiable records.
+                        </p>
+                        <div class="mt-4">
+                            <a href="about.html" class="btn btn-dark px-4 py-2 fw-bold"
+                                style="border-radius: 0; font-size: 0.85rem; letter-spacing: 1px;">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-vision-img">
+                    <img src="images/couple2 copy.png" alt="About GCMS">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Live Support Section -->
+    <section class="support-section">
+        <div class="support-container">
+            <!-- Left Panel (Dark) -->
+            <div class="support-left">
+                <div class="reveal active">
+                    <h2 class="display-5 fw-extrabold mb-3 text-white">Live Support</h2>
+                    <p class="lead opacity-75 mb-4" style="font-size: 1.1rem; line-height: 1.6;">
+                        Our Support & Guidance. Learning to work on this platform is easy with our support team on your
+                        side. You can be sure you have all the expertise, support and guidance you need at every stage.
+                    </p>
+                    <h6 class="text-uppercase fw-bold text-success mb-4"
+                        style="letter-spacing: 2px; font-size: 0.8rem;">Step-By-Step Thoroughly Onboarding Process</h6>
+                </div>
+
+                <div class="support-video-placeholder reveal delay-200 active">
+                    <i class="bi bi-play-circle"></i>
+                </div>
+            </div>
+
+            <!-- Right Panel (Light) -->
+            <div class="support-right">
+                <div class="px-lg-4 reveal delay-300 active">
+                    <h3 class="support-form-title">Talk To An Expert</h3>
+                    <p class="text-muted mb-5">Complete the form to speak with a product specialist or to set up a
+                        personalized call meeting with our expect.</p>
+
+                    <form class="support-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Full Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 pe-lg-5">
+                    <a href="index.html" class="text-decoration-none">
+                        <div class="footer-logo">
+                            GCMS <span class="brand-dot"></span>
+                        </div>
+                    </a>
+                    <p class="text-muted mb-4 opacity-75">
+                        Ghana Centralized Marriage System.<br>
+                        Delivering a secure, modern, and accessible digital governance platform for all citizens.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#"
+                            class="text-white opacity-50 text-decoration-none fs-5 hover-opacity-100 transition"><i
+                                class="bi bi-twitter-x"></i></a>
+                        <a href="#"
+                            class="text-white opacity-50 text-decoration-none fs-5 hover-opacity-100 transition"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#"
+                            class="text-white opacity-50 text-decoration-none fs-5 hover-opacity-100 transition"><i
+                                class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="fw-bold mb-4">Platform</h5>
+                    <ul class="footer-links">
+                        <li><a href="modules.html">Modules</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">API Integration</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="fw-bold mb-4">Organization</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="news.html">News & Updates</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="fw-bold mb-4">Newsletter</h5>
+                    <p class="text-muted opacity-75 mb-3">Stay updated with the latest GCMS feature releases.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control bg-dark border-secondary text-white"
+                            placeholder="Email address" aria-label="Email address">
+                        <button class="btn btn-primary-gcms" type="button" style="border-radius: 0;">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="mb-0">&copy; 2026 Ghana Centralized Marriage System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+    <!-- Scroll Response Script -->
+    <script>
+        (function () {
+            const header = document.querySelector('.oitech-header');
+            if (!header) return;
+            let lastScrollY = window.scrollY;
+
+            // Simple check for hero section height - usually 100vh or similar
+            const getHeroHeight = () => {
+                const hero = document.querySelector('.hero-section') || document.querySelector('.page-header');
+                return hero ? hero.offsetHeight : 600;
+            };
+
+            window.addEventListener('scroll', () => {
+                const currentScrollY = window.scrollY;
+                const heroHeight = getHeroHeight();
+
+                // Scrolled state (compact navbar)
+                if (currentScrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+
+                // Dark mode past hero/page header
+                if (currentScrollY > (heroHeight - 100)) {
+                    header.classList.add('past-hero');
+                } else {
+                    header.classList.remove('past-hero');
+                }
+
+                // Hide/Show on scroll direction
+                if (currentScrollY > lastScrollY && currentScrollY > 400) {
+                    // Scrolling down - threshold increased to not hide too early
+                    header.classList.add('header-up');
+                } else {
+                    // Scrolling up
+                    header.classList.remove('header-up');
+                }
+
+                lastScrollY = currentScrollY;
+            });
+        })();
+    </script>
+
+</body>
+
+</html>

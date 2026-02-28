@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modules - GCMS</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Header -->
+    <header class="oitech-header fixed-top">
+        <!-- Top Bar -->
+        <div class="oitech-topbar d-none d-lg-block">
+            <div class="container d-flex justify-content-between align-items-center py-2">
+                <div class="d-flex gap-4 text-muted small fw-medium">
+                    <span><i class="bi bi-envelope-fill text-warning me-2"></i> info@gcms.gov.gh</span>
+                </div>
+                <div class="d-flex gap-4 align-items-center text-muted small fw-medium">
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-dark"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-dark"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-dark"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navbar -->
+        <nav class="navbar navbar-expand-lg glass-nav p-0 shadow-sm" style="min-height: 75px;">
+            <div class="container position-relative h-100 p-0 d-flex align-items-center justify-content-between">
+
+                <!-- Black Box Logo Left -->
+                <div class="oitech-logo-box d-flex align-items-center h-100 px-4">
+                    <a class="navbar-brand text-white fw-bold fs-3 mb-0" href="index.html">
+                        GCMS<span style="color: var(--gcms-yellow)">.</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler border-0 me-3 my-3 shadow-none text-dark" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <i class="bi bi-list fs-1"></i>
+                </button>
+
+                <!-- Nav Links & Right Actions -->
+                <div class="collapse navbar-collapse px-4 px-lg-0" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3 fw-bold me-lg-5">
+                        <li class="nav-item"><a class="nav-link active" href="modules.html">Modules</a></li>
+                        <li class="nav-item"><a class="nav-link " href="features.html">Features</a></li>
+                        <li class="nav-item"><a class="nav-link " href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link " href="news.html">News</a></li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="hero-bg">
+            <img src="images/romantic-black-couple-sitting-restaurant-wearing-elegant-clothes.jpg"
+                alt="Modules Background">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container page-header-content reveal active">
+            <div class="pill-badge mb-3">System Architecture</div>
+            <h1 class="display-4 fw-extrabold mb-4">Core <span>Modules</span></h1>
+            <p class="lead mx-auto text-white opacity-75" style="max-width: 600px;">
+                A secure, government-managed digital platform designed to modernize the registration, verification, and
+                management of Ordinance and Customary marriages across Ghana.
+            </p>
+        </div>
+    </header>
+
+    <!-- Modules Content -->
+    <section class="section-padding bg-gray-light">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- Main Accordion Area -->
+                <div class="col-lg-8 reveal delay-100">
+                    <h3 class="fw-bold mb-4 d-flex align-items-center gap-3">
+                        <div class="card-icon black mb-0" style="width: 40px; height: 40px; font-size: 18px;"><i
+                                class="bi bi-layers"></i></div>
+                        Core System Architecture
+                    </h3>
+
+                    <div class="d-flex flex-column gap-5" id="modulesContent">
+
+                        <!-- A. Registration Module -->
+                        <div class="module-block">
+                            <h4 class="fw-bold mb-3 text-dark d-flex align-items-center gap-2">
+                                Registration Module
+                            </h4>
+                            <p class="mb-4 text-secondary">The core engine for capturing all necessary legal and
+                                personal data
+                                efficiently. This module ensures that all marriage records are started with
+                                precision and accuracy.</p>
+                            <ul class="feature-list">
+                                <li><strong>Marriage Registration Module:</strong> Digital capturing of
+                                    marriage types (Civil, Customary, Islamic), dates, and officiating officers.
+                                </li>
+                                <li><strong>Spouses Information Module:</strong> Secure entry of personal
+                                    identities, biometric data, and marital history for both parties.</li>
+                                <li><strong>Witness Information Module:</strong> Recording of legal
+                                    witnesses, including digital signatures and identification verification.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- B. Verification and Validation Module -->
+                        <div class="module-block">
+                            <h4 class="fw-bold mb-3 text-dark d-flex align-items-center gap-2">
+                                Verification and Validation Module
+                            </h4>
+                            <p class="mb-4 text-secondary">Ensuring data integrity through strict identity checks and
+                                external
+                                database cross-referencing.</p>
+                            <ul class="feature-list">
+                                <li><strong>Identity Verification:</strong> Real-time integration with
+                                    National Identity frameworks (e.g., Ghana Card) to validate citizen status
+                                    and eligibility.</li>
+                            </ul>
+                        </div>
+
+                        <!-- C. WorkStation Module -->
+                        <div class="module-block">
+                            <h4 class="fw-bold mb-3 text-dark d-flex align-items-center gap-2">
+                                WorkStation Module
+                            </h4>
+                            <p class="mb-4 text-secondary">A hierarchical administrative environment supporting Ghana's
+                                governance structure across all levels.</p>
+                            <ul class="feature-list">
+                                <li><strong>Role-Based Workflow:</strong> Specific dashboards and permissions
+                                    for:
+                                    <div class="d-flex flex-wrap gap-2 mt-3">
+                                        <span class="badge bg-dark fw-normal px-3 py-2">Registrar</span>
+                                        <span class="badge bg-dark fw-normal px-3 py-2">Supervisors</span>
+                                        <span class="badge bg-dark fw-normal px-3 py-2">Municipal</span>
+                                        <span class="badge bg-dark fw-normal px-3 py-2">District</span>
+                                        <span class="badge bg-dark fw-normal px-3 py-2">Metropolitan</span>
+                                        <span class="badge bg-dark fw-normal px-3 py-2">Regional</span>
+                                        <span class="badge bg-dark fw-normal px-3 py-2">National</span>
+                                    </div>
+                                </li>
+                                <li class="mt-4"><strong>Application Review & Approval:</strong> Multi-stage
+                                    digital pipeline where applications are vetted, queried, and approved by
+                                    relevant authorities.</li>
+                            </ul>
+                        </div>
+
+                        <!-- D. Certificate Issuance Module -->
+                        <div class="module-block">
+                            <h4 class="fw-bold mb-3 text-dark d-flex align-items-center gap-2">
+                                Certificate Issuance Module
+                            </h4>
+                            <p class="mb-0 text-secondary">Automated generation of high-security marriage certificates.
+                                Each
+                                document features unique QR verification codes and digital seals, supporting
+                                both digital downloads and physical printing.</p>
+                        </div>
+
+                        <!-- E. Divorce Module -->
+                        <div class="module-block">
+                            <h4 class="fw-bold mb-3 text-dark d-flex align-items-center gap-2">
+                                Divorce Module
+                            </h4>
+                            <p class="mb-0 text-secondary">Secure management of marital dissolution records. This module
+                                hooks
+                                into the central registry to update marital statuses instantly upon legal
+                                decree, ensuring the database remains a true source of state reality.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Sidebar Modules -->
+                <div class="col-lg-4 reveal delay-200">
+                    <h3 class="fw-bold mb-4 d-flex align-items-center gap-3">
+                        <div class="card-icon yellow mb-0" style="width: 40px; height: 40px; font-size: 18px;"><i
+                                class="bi bi-gear-wide-connected"></i></div>
+                        Connectivity & Intel
+                    </h3>
+
+                    <div class="d-flex flex-column gap-4">
+                        <div class="premium-hover-card p-4">
+                            <h5 class="fw-bold">Integration Module (API)</h5>
+                            <p class="text-muted small mb-3">Enterprise-grade API layer for cross-platform data
+                                synchronization.</p>
+                            <ul class="feature-list small mb-0">
+                                <li>Real-time sync with NIA</li>
+                                <li>Births & Deaths Registry hooks</li>
+                                <li>Third-party legal verification</li>
+                            </ul>
+                        </div>
+                        <div class="premium-hover-card p-4">
+                            <h5 class="fw-bold">Data Analytics Module</h5>
+                            <p class="text-muted small mb-3">Turning registration data into actionable national
+                                intelligence.</p>
+                            <ul class="feature-list small mb-0">
+                                <li>Regional demographic reporting</li>
+                                <li>National marriage trends</li>
+                                <li>Resource allocation heatmaps</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 pe-lg-5">
+                    <a href="index.html" class="text-decoration-none">
+                        <div class="footer-logo">
+                            GCMS <span class="brand-dot"></span>
+                        </div>
+                    </a>
+                    <p class="text-muted mb-4 opacity-75">Ghana Centralized Marriage System.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="mb-0">&copy; 2026 Ghana Centralized Marriage System.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Scroll Response Script -->
+    <script>
+        (function () {
+            const header = document.querySelector('.oitech-header');
+            if (!header) return;
+            let lastScrollY = window.scrollY;
+
+            // Simple check for hero section height - usually 100vh or similar
+            const getHeroHeight = () => {
+                const hero = document.querySelector('.hero-section') || document.querySelector('.page-header');
+                return hero ? hero.offsetHeight : 600;
+            };
+
+            window.addEventListener('scroll', () => {
+                const currentScrollY = window.scrollY;
+                const heroHeight = getHeroHeight();
+
+                // Scrolled state (compact navbar)
+                if (currentScrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+
+                // Dark mode past hero/page header
+                if (currentScrollY > (heroHeight - 100)) {
+                    header.classList.add('past-hero');
+                } else {
+                    header.classList.remove('past-hero');
+                }
+
+                // Hide/Show on scroll direction
+                if (currentScrollY > lastScrollY && currentScrollY > 400) {
+                    // Scrolling down - threshold increased to not hide too early
+                    header.classList.add('header-up');
+                } else {
+                    // Scrolling up
+                    header.classList.remove('header-up');
+                }
+
+                lastScrollY = currentScrollY;
+            });
+        })();
+    </script>
+
+</body>
+
+</html>
