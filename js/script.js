@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
-  
+document.addEventListener('DOMContentLoaded', function () {
+
   // 1. Glass Navbar Scroll Effect
   const navbar = document.querySelector('.navbar');
-  
+
   if (navbar) {
     window.addEventListener('scroll', () => {
       if (window.scrollY > 50) {
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     for (let i = 0; i < reveals.length; i++) {
       const windowHeight = window.innerHeight;
       const elementTop = reveals[i].getBoundingClientRect().top;
-      const elementVisible = 100;
+      const elementVisible = 50; // Lowered threshold so hero elements show immediately
 
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add('active');
@@ -34,8 +34,11 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   window.addEventListener('scroll', reveal);
-  
-  // Trigger once to show elements already in view
-  reveal();
-  
+
+  // Trigger once to show elements already in view (like the Hero section)
+  // Wrapped in a slight timeout to ensure DOM paints first for the CSS transition to execute
+  setTimeout(() => {
+    reveal();
+  }, 100);
+
 });

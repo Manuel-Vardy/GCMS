@@ -538,8 +538,8 @@ h6,
 }
 
 .module-modern-card {
-    background: #fff;
-    padding: 30px;
+    background: transparent;
+    padding: 25px 20px;
     border-radius: 0;
     border: none;
     height: 100%;
@@ -548,72 +548,73 @@ h6,
     display: flex;
     flex-direction: column;
     z-index: 1;
+}
+
+/* Grid Border Effect for Modules Section */
+.bg-modules-pattern .row.g-4 {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+
+.bg-modules-pattern .row.g-4>[class*="col-"] {
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 0;
+    /* Let internal cards handle padding */
+}
+
+/* Specific padding for cells */
+.module-modern-card,
+.module-header-cell {
+    padding: 30px !important;
+}
+
+.module-header-cell {
+    background: rgba(34, 197, 94, 0.04);
+    position: relative;
     overflow: hidden;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.02);
-    /* Optimized ultra-light shadow */
+    height: 100%;
+}
+
+.module-header-cell::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(34, 197, 94, 0.03);
+    border-radius: 50%;
+    top: -100px;
+    left: -100px;
 }
 
 .module-modern-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
-    /* Subtle hover depth */
 }
 
-/* Module Card Decorative Circles - Matched to Our Vision Style */
+/* Module Decoration - Simplified for background-only look */
 .module-card-deco {
-    position: absolute;
-    border: 1px solid rgba(65, 65, 65, 0.1);
-    /* Further reduced visibility */
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: -1;
-}
-
-.module-card-deco-1 {
-    width: 280px;
-    height: 280px;
-    bottom: -110px;
-    right: -110px;
-    /* Sharing same center point */
-}
-
-.module-card-deco-2 {
-    width: 200px;
-    height: 200px;
-    bottom: -70px;
-    right: -70px;
-    /* Sharing same center point */
-}
-
-.module-card-deco-3 {
-    width: 120px;
-    height: 120px;
-    bottom: -30px;
-    right: -30px;
-    /* Sharing same center point */
+    display: none;
+    /* Removing the specific card deco for a cleaner background look */
 }
 
 .module-card-header {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 12px;
-    /* Reduced from 20px */
+    gap: 12px;
+    margin-bottom: 10px;
 }
 
 .module-modern-icon {
-    font-size: 2.2rem;
-    color: #ef4444;
-    /* Branded reddish-orange from reference */
+    font-size: 1.8rem;
+    color: var(--gcms-yellow);
     line-height: 1;
 }
 
 .module-modern-title {
-    font-size: 1.25rem;
-    /* Increased from 1.15rem */
+    font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 0;
-    color: #111827;
+    color: var(--gcms-black);
     line-height: 1.3;
 }
 
@@ -694,6 +695,65 @@ h6,
     height: 100%;
     z-index: -1;
     transition: var(--transition-normal);
+}
+
+/* Strategic Goals Cards */
+.strategic-goal-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 0;
+    /* Square look */
+    padding: 1.5rem !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    z-index: 1;
+}
+
+.strategic-goal-card::before,
+.strategic-goal-card::after {
+    content: '';
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.strategic-goal-card::before {
+    width: 160px;
+    height: 160px;
+    bottom: -70px;
+    right: -70px;
+}
+
+.strategic-goal-card::after {
+    width: 100px;
+    height: 100px;
+    bottom: -40px;
+    right: -40px;
+}
+
+.strategic-goal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.icon-square {
+    width: 42px;
+    /* Slightly smaller */
+    height: 42px;
+    background-color: var(--gcms-yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    /* Square icon box as in the ref */
+    flex-shrink: 0;
+}
+
+.icon-square i {
+    font-size: 1.25rem;
+    color: var(--gcms-black);
 }
 
 /* Feature 1: Dark Premium Overlay */
@@ -1085,11 +1145,46 @@ h6,
     .about-vision-img {
         position: relative;
         width: 100%;
-        height: 300px;
+        height: 250px;
+        /* Reduced from 300px */
+    }
+
+    /* Add bottom-to-top gradient to seamlessly blend image into the white text area below */
+    .about-vision-img::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 120px;
+        background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        z-index: 5;
     }
 
     .about-vision-content {
-        padding: 40px 30px;
+        padding: 20px 20px 30px 20px;
+        /* Reduced from 40px 30px */
+        background: #fff;
+    }
+
+    /* Reduce text sizes on mobile */
+    .about-vision-text .lead {
+        font-size: 0.95rem !important;
+        /* Scaled down from 1.1rem */
+        line-height: 1.6 !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .about-vision-text .text-muted {
+        font-size: 0.85rem !important;
+        /* Scaled down from 0.95rem */
+        line-height: 1.6 !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .about-vision-text .btn {
+        padding: 0.5rem 1.25rem !important;
+        font-size: 0.8rem !important;
     }
 }
 
@@ -1786,16 +1881,16 @@ h6,
 .custom-hamburger span {
     display: flex;
     align-items: center;
-    gap: 5px;
-    height: 4px;
+    gap: 4px;
+    height: 2.5px;
 }
 
 /* Circle dot on left */
 .custom-hamburger span::before {
     content: '';
     flex-shrink: 0;
-    width: 4px;
-    height: 4px;
+    width: 2.5px;
+    height: 2.5px;
     border-radius: 50%;
     background-color: #fff !important;
     display: block;
@@ -1805,7 +1900,7 @@ h6,
 .custom-hamburger span::after {
     content: '';
     flex: 1;
-    height: 4px;
+    height: 2.5px;
     border-radius: 999px;
     background-color: #fff !important;
     display: block;
@@ -1827,5 +1922,70 @@ h6,
         height: 50px !important;
         padding: 0 16px !important;
         font-size: 0.95rem;
+    }
+}
+
+/* =====================
+   Mobile Vision Section Layout
+   ===================== */
+@media (max-width: 991.98px) {
+    .vision-card-full {
+        flex-direction: column !important;
+        min-height: auto;
+    }
+
+    /* Keep image at top, fixed height instead of full absolute */
+    .vision-card-img {
+        position: relative !important;
+        width: 100% !important;
+        height: 300px !important;
+    }
+
+    /* Remove transparent gradient on mobile, use solid white to ensure text readability */
+    .vision-card-content {
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+        padding: 20px 20px 30px 20px !important;
+        /* Tightened padding */
+        background: #fff !important;
+    }
+
+    /* Ensure text container takes full width of the new padding */
+    .vision-card-text {
+        max-width: 100% !important;
+    }
+
+    /* Globally reduce section padding on mobile to close gaps */
+    .section-padding {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+
+    /* Specifically reduce the gap above the Modules heading */
+    .bg-modules-pattern .mb-5 {
+        margin-bottom: 1.5rem !important;
+        padding-bottom: 0 !important;
+    }
+
+    /* Fix Modules diagonal background visibility on tall mobile screens */
+    .bg-modules-pattern {
+        background-size: cover !important;
+        background-image:
+            linear-gradient(145deg, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.04) 40%, transparent 40%),
+            linear-gradient(145deg, transparent 0%, transparent 40%, rgba(0, 0, 0, 0.02) 40%),
+            linear-gradient(35deg, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.02) 40%, transparent 40%) !important;
+    }
+
+    .bg-modules-pattern::before {
+        top: -10% !important;
+        height: 120% !important;
+        background: linear-gradient(145deg, rgba(239, 68, 68, 0.06) 0%, transparent 50%, rgba(239, 68, 68, 0.03) 100%) !important;
+        transform: rotate(-5deg) !important;
+    }
+
+    /* Reduce module card padding on mobile */
+    .module-modern-card {
+        padding: 20px !important;
     }
 }
