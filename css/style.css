@@ -514,28 +514,18 @@ h6,
 
 /* Modules Section - Borderless Grid with Diagonal Background */
 .bg-modules-pattern {
-    background-color: #f9f9f9;
-    background-image:
-        linear-gradient(120deg, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.03) 50%, transparent 50%),
-        linear-gradient(120deg, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.015) 50%),
-        linear-gradient(60deg, rgba(0, 0, 0, 0.015) 0%, rgba(0, 0, 0, 0.015) 50%, transparent 50%);
-    background-size: 100% 100%, 100% 100%, 100% 100%;
+    background-color: #ffffff;
+    background-image: linear-gradient(120deg,
+            transparent 0%, transparent 20%,
+            rgba(0, 0, 0, 0.01) 20%, rgba(0, 0, 0, 0.01) 40%,
+            transparent 40%, transparent 60%,
+            rgba(0, 0, 0, 0.01) 60%, rgba(0, 0, 0, 0.01) 80%,
+            transparent 80%);
     position: relative;
     overflow: hidden;
 }
 
-.bg-modules-pattern::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -10%;
-    width: 120%;
-    height: 200%;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.03) 0%, transparent 40%, rgba(0, 0, 0, 0.01) 100%);
-    transform: rotate(-15deg);
-    z-index: 0;
-    pointer-events: none;
-}
+
 
 .module-modern-card {
     background: transparent;
@@ -570,7 +560,7 @@ h6,
 }
 
 .module-header-cell {
-    background: rgba(34, 197, 94, 0.04);
+    background: rgba(239, 68, 68, 0.02);
     position: relative;
     overflow: hidden;
     height: 100%;
@@ -581,7 +571,7 @@ h6,
     position: absolute;
     width: 200px;
     height: 200px;
-    background: rgba(34, 197, 94, 0.03);
+    background: rgba(239, 68, 68, 0.03);
     border-radius: 50%;
     top: -100px;
     left: -100px;
@@ -617,6 +607,27 @@ h6,
     margin-bottom: 0;
     color: var(--gcms-black);
     line-height: 1.3;
+}
+
+/* Mobile Optimizations for Modules Section */
+@media (max-width: 768px) {
+    .bg-modules-pattern .container-fluid {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .module-modern-card,
+    .module-header-cell {
+        padding: 20px !important;
+    }
+
+    .module-modern-icon {
+        font-size: 1.6rem;
+    }
+
+    .module-modern-title {
+        font-size: 1rem;
+    }
 }
 
 .module-modern-content {
