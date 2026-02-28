@@ -1862,8 +1862,8 @@ h6,
 
     /* Extra padding so hero is NOT hidden under navbar + topbar */
     .hero-section {
-        padding-top: 160px !important;
-        padding-bottom: 60px;
+        padding-top: 140px !important;
+        padding-bottom: 40px !important;
         align-items: flex-start !important;
     }
 
@@ -2001,8 +2001,8 @@ h6,
         position: relative !important;
         width: 100% !important;
         height: auto !important;
-        padding: 20px 20px 30px 20px !important;
-        /* Tightened padding */
+        padding: 12px 15px 15px 15px !important;
+        /* Further tightened padding */
         background: #fff !important;
     }
 
