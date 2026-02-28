@@ -1871,6 +1871,7 @@ h6,
         padding-top: 140px !important;
         padding-bottom: 10px !important;
         align-items: flex-start !important;
+        min-height: auto !important;
     }
 
     /* Reduce oversized heading on mobile */
