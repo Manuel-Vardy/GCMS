@@ -606,7 +606,8 @@ h6,
 
 .module-modern-icon {
     font-size: 1.8rem;
-    color: var(--gcms-yellow);
+    color: #ef4444;
+    /* Modern Red */
     line-height: 1;
 }
 
