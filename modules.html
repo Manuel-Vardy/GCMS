@@ -83,53 +83,61 @@
             <div class="pill-badge mb-3">System Architecture</div>
             <h1 class="display-4 fw-extrabold mb-4">Core <span>Modules</span></h1>
             <p class="lead mx-auto text-white opacity-75" style="max-width: 600px;">
-                A secure, government-managed digital platform designed to modernize the registration, verification, and
-                management of Ordinance and Customary marriages across Ghana.
+                Discover the interconnected systems that power GCMS. From initial application to final certificate
+                issuance, these specialized components work in harmony to deliver a seamless, transparent, and secure
+                civil registration experience for all citizens.
             </p>
         </div>
     </header>
 
     <!-- Modules Content -->
-    <section class="section-padding bg-gray-light">
-        <div class="container">
-            <div class="row g-5">
+    <section class="section-padding bg-modules-pattern">
+        <div class="container-fluid px-0 modules-title-align mb-5">
+            <div class="section-title-left reveal">
+                <h2 class="display-5 fw-extrabold mb-2 text-dark heading-left-animated">Core System Architecture</h2>
+                <p class="text-muted" style="font-size: 1.1rem; max-width: 700px;">A secure, government-managed digital
+                    platform designed to modernize the registration, verification, and management of marriages across
+                    Ghana.</p>
+            </div>
+        </div>
 
-                <!-- Main Accordion Area -->
-                <div class="col-lg-8 reveal delay-100">
-                    <h3 class="fw-bold mb-4 d-flex align-items-center gap-3">
-                        <div class="card-icon black mb-0" style="width: 40px; height: 40px; font-size: 18px;"><i
-                                class="bi bi-layers"></i></div>
-                        Core System Architecture
-                    </h3>
+        <div class="container-fluid px-0">
+            <div class="row g-0">
 
-                    <div class="d-flex flex-column gap-5" id="modulesContent">
-
-                        <!-- A. Registration Module -->
-                        <div class="module-block">
-                            <h4 class="fw-bold mb-3 text-dark d-flex align-items-center gap-2">
-                                Registration Module
-                            </h4>
-                            <p class="mb-4 text-secondary">The core engine for capturing all necessary legal and
-                                personal data efficiently. This module ensures that all marriage records are started
-                                with
-                                precision and accuracy.</p>
-
-                            <div class="ms-3 mb-4">
-                                <h5 class="fw-bold text-dark mb-2">Marriage Registration Module</h5>
-                                <p class="text-secondary small mb-3">Digital capturing of marriage types (Civil,
-                                    Customary, Islamic), dates, and officiating officers.</p>
-
-                                <h5 class="fw-bold text-dark mb-2">Spouses Information Module</h5>
-                                <p class="text-secondary small mb-3">Secure entry of personal identities, biometric
-                                    data, and marital history for both parties.</p>
-
-                                <h5 class="fw-bold text-dark mb-2">Witness Information Module</h5>
-                                <p class="text-secondary small mb-0">Recording of legal witnesses, including digital
+                <!-- Registration Module -->
+                <div class="col-lg-4 col-md-6 reveal delay-100">
+                    <div class="module-modern-card" style="min-height: 100%;">
+                        <div class="module-card-header">
+                            <div class="module-modern-icon"><i class="bi bi-pencil-square"></i></div>
+                            <h4 class="module-modern-title">Registration Module</h4>
+                        </div>
+                        <div class="module-modern-content">
+                            <p class="mb-3">The core engine for capturing all necessary legal and personal data
+                                efficiently. This module ensures that all marriage records are started with precision
+                                and accuracy.</p>
+                            <div class="ms-2 mb-3">
+                                <h6 class="fw-bold text-dark mb-1">Marriage Registration Module</h6>
+                                <p class="text-muted small mb-2">Digital capturing of marriage types (Civil, Customary,
+                                    Islamic), dates, and officiating officers.</p>
+                                <h6 class="fw-bold text-dark mb-1">Spouses Information Module</h6>
+                                <p class="text-muted small mb-2">Secure entry of personal identities, biometric data,
+                                    and marital history for both parties.</p>
+                                <h6 class="fw-bold text-dark mb-1">Witness Information Module</h6>
+                                <p class="text-muted small mb-0">Recording of legal witnesses, including digital
                                     signatures and identification verification.</p>
                             </div>
-
-                            <div class="bg-light p-4 border-start border-warning border-4">
-                                <h6 class="fw-bold text-dark mb-3">Key Benefits</h6>
+                        </div>
+                        <!-- Desktop: Read More button (hidden on mobile) -->
+                        <button
+                            class="d-none d-lg-flex align-items-center gap-2 mt-3 mb-1 border-0 bg-transparent p-0 module-read-more"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#keyBenefitsCollapseDesktop"
+                            aria-expanded="false" aria-controls="keyBenefitsCollapseDesktop">
+                            <i class="bi bi-plus"></i> Read More
+                        </button>
+                        <!-- Hidden on desktop until clicked, always visible on mobile -->
+                        <div class="collapse key-benefits-panel mt-2" id="keyBenefitsCollapseDesktop">
+                            <div class="bg-light p-3 border-start border-warning border-4">
+                                <h6 class="fw-bold text-dark mb-2">Key Benefits</h6>
                                 <ul class="feature-list small mb-0">
                                     <li>No manual queues or paper filing</li>
                                     <li>Lower risk of errors and lost records</li>
@@ -139,87 +147,110 @@
                                 </ul>
                             </div>
                         </div>
-
-                        <!-- B. Verification and Validation Module -->
-                        <div class="module-block">
-                            <h4 class="fw-bold mb-3 text-dark d-flex align-items-center gap-2">
-                                Verification and Validation Module
-                            </h4>
-                            <p class="mb-3 text-secondary">After filing, the Ghana Centralized Marriage System waits a
-                                statutory period (normally 21 days).</p>
-                            <p class="mb-4 text-secondary">During this time, authorised users can lodge objections
-                                (caveats) electronically. With GCMS, government staff can review objections and approve
-                                or reject before certificate issuance. The module also provide identity verification of
-                                all applicants by real-time integration with National Identity frameworks.</p>
-                        </div>
-
-                        <!-- C. WorkStation Module -->
-                        <div class="module-block">
-                            <h4 class="fw-bold mb-3 text-dark d-flex align-items-center gap-2">
-                                WorkStation Module
-                            </h4>
-                            <p class="mb-4 text-secondary">Ghana Centralized Marriage System has a Workstation Module
-                                that secures internal interface used by registrars, supervisors, and authorized
-                                government staff to process, review, approve, and manage marriage registration
-                                applications. It serves as the operational backbone of the Marriage Registration System.
-                            </p>
-                            <ul class="feature-list">
-                                <li><strong>Role-Based work flow:</strong> Efficient navigation and task assignment
-                                    based on user responsibilities.</li>
-                                <li><strong>Application review & Approval:</strong> Secure multi-stage vetting process.
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- D. Certificate Issuance Module -->
-                        <div class="module-block">
-                            <h4 class="fw-bold mb-3 text-dark d-flex align-items-center gap-2">
-                                Certificate Issuance Module
-                            </h4>
-                            <p class="mb-0 text-secondary">The Certificate Issuance and Generation feature automates the
-                                creation, validation, and delivery of legally recognized marriage certificates from
-                                GCMS.</p>
-                        </div>
-
-                        <!-- E. Divorce Module -->
-                        <div class="module-block">
-                            <h4 class="fw-bold mb-3 text-dark d-flex align-items-center gap-2">
-                                Divorce Module
-                            </h4>
-                            <p class="mb-0 text-secondary">The Divorce Module is a secure component in GCMS designed to
-                                manage the registration, validation, and documentation of divorce proceedings in
-                                accordance with Ghana’s legal framework. It ensures that divorce records are properly
-                                processed, recorded, and linked to existing marriage records within the national civil
-                                registration system.</p>
-                        </div>
-
                     </div>
                 </div>
 
-                <!-- Sidebar Modules -->
-                <div class="col-lg-4 reveal delay-200">
-                    <h3 class="fw-bold mb-4 d-flex align-items-center gap-3">
-                        <div class="card-icon yellow mb-0" style="width: 40px; height: 40px; font-size: 18px;"><i
-                                class="bi bi-gear-wide-connected"></i></div>
-                        Connectivity & Intel
-                    </h3>
-
-                    <div class="d-flex flex-column gap-4">
-                        <div class="premium-hover-card p-4">
-                            <h5 class="fw-bold">Integration Module (API)</h5>
-                            <p class="text-muted small mb-0">The API Integration Component enables GCMS to securely
-                                communicate and exchange data with other authorized government systems and third-party
-                                platforms. It ensures interoperability, real-time verification, and seamless service
-                                delivery across Ghana’s digital government ecosystem.</p>
+                <!-- Verification Module -->
+                <div class="col-lg-4 col-md-6 reveal delay-200">
+                    <div class="module-modern-card" style="min-height: 100%;">
+                        <div class="module-card-header">
+                            <div class="module-modern-icon"><i class="bi bi-shield-check"></i></div>
+                            <h4 class="module-modern-title">Verification and Validation Module</h4>
                         </div>
-                        <div class="premium-hover-card p-4">
-                            <h5 class="fw-bold">Data Analytics Module</h5>
-                            <p class="text-muted small mb-0">The Data Analytics Module is a strategic component of GCMS
-                                that transforms registration data into actionable insights for government planning,
-                                monitoring, and policy development. The module collects and analyzes aggregated marriage
-                                and divorce data to generate real-time statistics and trend reports at municipal,
-                                district, regional, and national levels. It provides dashboards and visual reports on
-                                all indicators.</p>
+                        <div class="module-modern-content">
+                            <p class="mb-3">After filing, the Ghana Centralized Marriage System waits a statutory period
+                                (normally 21 days).</p>
+                            <p class="mb-0">During this time, authorised users can lodge objections (caveats)
+                                electronically. With GCMS, government staff can review objections and approve or reject
+                                before certificate issuance. The module also provide identity verification of all
+                                applicants by real-time integration with National Identity frameworks.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WorkStation Module -->
+                <div class="col-lg-4 col-md-6 reveal delay-300">
+                    <div class="module-modern-card" style="min-height: 100%;">
+                        <div class="module-card-header">
+                            <div class="module-modern-icon"><i class="bi bi-pc-display"></i></div>
+                            <h4 class="module-modern-title">WorkStation Module</h4>
+                        </div>
+                        <div class="module-modern-content">
+                            <p class="mb-3">Ghana Centralized Marriage System has a Workstation Module that secures
+                                internal interface used by registrars, supervisors, and authorized government staff to
+                                process, review, approve, and manage marriage registration applications. It serves as
+                                the operational backbone of the Marriage Registration System.</p>
+                            <ul class="feature-list small mb-0">
+                                <li><strong>Role-Based work flow:</strong> Efficient navigation and task assignment
+                                    based on user responsibilities.</li>
+                                <li><strong>Application review &amp; Approval:</strong> Secure multi-stage vetting
+                                    process.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate Issuance Module -->
+                <div class="col-lg-4 col-md-6 reveal delay-400">
+                    <div class="module-modern-card" style="min-height: 100%;">
+                        <div class="module-card-header">
+                            <div class="module-modern-icon"><i class="bi bi-patch-check"></i></div>
+                            <h4 class="module-modern-title">Certificate Issuance Module</h4>
+                        </div>
+                        <div class="module-modern-content">
+                            <p class="mb-0">The Certificate Issuance and Generation feature automates the creation,
+                                validation, and delivery of legally recognized marriage certificates from GCMS.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divorce Module -->
+                <div class="col-lg-4 col-md-6 reveal delay-500">
+                    <div class="module-modern-card" style="min-height: 100%;">
+                        <div class="module-card-header">
+                            <div class="module-modern-icon"><i class="bi bi-file-earmark-break"></i></div>
+                            <h4 class="module-modern-title">Divorce Module</h4>
+                        </div>
+                        <div class="module-modern-content">
+                            <p class="mb-0">The Divorce Module is a secure component in GCMS designed to manage the
+                                registration, validation, and documentation of divorce proceedings in accordance with
+                                Ghana's legal framework. It ensures that divorce records are properly processed,
+                                recorded, and linked to existing marriage records within the national civil registration
+                                system.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Integration Module (API) -->
+                <div class="col-lg-4 col-md-6 reveal delay-600">
+                    <div class="module-modern-card" style="min-height: 100%;">
+                        <div class="module-card-header">
+                            <div class="module-modern-icon"><i class="bi bi-box-arrow-in-right"></i></div>
+                            <h4 class="module-modern-title">Integration Module (API)</h4>
+                        </div>
+                        <div class="module-modern-content">
+                            <p class="mb-0">The API Integration Component enables GCMS to securely communicate and
+                                exchange data with other authorized government systems and third-party platforms. It
+                                ensures interoperability, real-time verification, and seamless service delivery across
+                                Ghana's digital government ecosystem.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Analytics Module -->
+                <div class="col-lg-4 col-md-6 reveal delay-700">
+                    <div class="module-modern-card" style="min-height: 100%;">
+                        <div class="module-card-header">
+                            <div class="module-modern-icon"><i class="bi bi-bar-chart-line"></i></div>
+                            <h4 class="module-modern-title">Data Analytics Module</h4>
+                        </div>
+                        <div class="module-modern-content">
+                            <p class="mb-0">The Data Analytics Module is a strategic component of GCMS that transforms
+                                registration data into actionable insights for government planning, monitoring, and
+                                policy development. The module collects and analyzes aggregated marriage and divorce
+                                data to generate real-time statistics and trend reports at municipal, district,
+                                regional, and national levels. It provides dashboards and visual reports on all
+                                indicators.</p>
                         </div>
                     </div>
                 </div>
