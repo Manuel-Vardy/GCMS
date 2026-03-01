@@ -255,6 +255,17 @@ h6,
     display: block;
 }
 
+/* Hero Divider Line */
+.hero-divider {
+    max-width: 500px;
+}
+
+@media (max-width: 768px) {
+    .hero-divider {
+        max-width: 180px;
+    }
+}
+
 /* Glassmorphism Search Bar */
 .search-filter-card {
     background: rgba(255, 255, 255, 0.1);
@@ -509,9 +520,9 @@ h6,
     padding: 40px 60px;
     background: linear-gradient(to right,
             rgba(255, 255, 255, 1) 0%,
-            rgba(255, 255, 255, 1) 30%,
-            rgba(255, 255, 255, 0.8) 50%,
-            rgba(255, 255, 255, 0) 100%);
+            rgba(255, 255, 255, 1) 20%,
+            rgba(255, 255, 255, 0.5) 45%,
+            rgba(255, 255, 255, 0) 75%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -832,25 +843,21 @@ h6,
 /* Feature 1: Dark Premium Overlay */
 .feature-block-premium.f-overlay-1::before {
     background: rgba(15, 17, 21, 0.85);
-    /* Dark Slate / Black */
 }
 
 /* Feature 2: Black Overlay */
 .feature-block-premium.f-overlay-2::before {
     background: rgba(0, 0, 0, 0.85);
-    /* Pure Black */
 }
 
 /* Feature 3: Dark Overlay */
 .feature-block-premium.f-overlay-3::before {
     background: rgba(17, 24, 39, 0.85);
-    /* Very Dark / Slate */
 }
 
 /* Feature 4: Deep Black Overlay */
 .feature-block-premium.f-overlay-4::before {
-    background: rgba(10, 10, 10, 0.9);
-    /* Almost Pure Black */
+    background: rgba(10, 10, 10, 0.85);
 }
 
 .feature-block-premium:hover::before {
@@ -1171,12 +1178,16 @@ h6,
 .about-vision-content {
     position: relative;
     z-index: 2;
-    width: 100%;
+    width: 55%;
     height: 100%;
     padding: 40px 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: linear-gradient(to right,
+            rgba(248, 249, 250, 1) 0%,
+            rgba(248, 249, 250, 1) 70%,
+            rgba(248, 249, 250, 0) 100%);
 }
 
 .about-vision-text {
@@ -1187,7 +1198,7 @@ h6,
     position: absolute;
     right: 0;
     top: 0;
-    width: 50%;
+    width: 45%;
     height: 100%;
     z-index: 1;
 }
@@ -1224,9 +1235,9 @@ h6,
     }
 
     .about-vision-content {
+        width: 100%;
         padding: 20px 20px 30px 20px;
-        /* Reduced from 40px 30px */
-        background: #fff;
+        background: #f8f9fa;
     }
 
     /* Reduce text sizes on mobile */
