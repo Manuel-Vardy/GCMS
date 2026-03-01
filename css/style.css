@@ -2183,9 +2183,20 @@ h6,
         padding-right: 0.75rem !important;
     }
 
-    .strategic-goal-card {
-        border-left: 1px solid rgba(0, 0, 0, 0.05) !important;
-        border-right: 1px solid rgba(0, 0, 0, 0.05) !important;
+    .hero-btn-group {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 15px !important;
+    }
+
+    .hero-btn-group .btn {
+        width: auto !important;
+    }
+
+    .hero-section {
+        padding-top: 190px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
 }
 
