@@ -1406,6 +1406,32 @@ h6,
     }
 }
 
+/* Training Banner */
+.training-banner {
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/talk.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+}
+
+.section-overlap {
+    margin-top: -150px;
+    position: relative;
+    z-index: 10;
+}
+
+@media (max-width: 991px) {
+    .training-banner {
+        height: 300px;
+    }
+
+    .section-overlap {
+        margin-top: -80px;
+    }
+}
+
 .dashboard-mockup {
     border-radius: 20px;
     overflow: hidden;
